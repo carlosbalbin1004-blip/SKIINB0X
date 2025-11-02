@@ -1,85 +1,141 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SKIINBOX — Elegancia esencial</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>SKIINBOX — Elegancia esencial</title>
+  <meta name="description" content="Moda por suscripción: asesoría de estilo, prendas atemporales y calidad artesanal.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container">
-    <div class="brand"><div class="logo">SB</div><div><h1>SKIINBOX</h1><p class="tag">Elegancia esencial</p></div></div>
-    <nav class="nav"><a href="#how">Cómo funciona</a><a href="#plans">Planes</a><a href="#lookbook">Lookbook</a><a href="#about">Nosotros</a><a href="#contact">Contacto</a></nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <div class="hero-left">
-      <h2>Moda personalizada que llega a tu puerta</h2>
-      <p class="lead">SKIINBOX combina la sensibilidad artesanal con tecnología y estilismo humano para ofrecer prendas atemporales y seleccionadas según tu esencia.</p>
-      <div class="cta"><button class="btn btn-primary" id="startQuiz">Hacer test de estilo</button><a class="btn" href="#plans">Ver planes</a></div>
-    </div>
-    <aside class="hero-card">
-      <img src="assets/images/hero.jpg" alt="Hero">
-      <div class="card-body"><strong id="recommended">Plan recomendado: Estándar</strong><div class="muted">USD 20 / mes</div>
-        <form id="subscribeForm" class="subscribe-form"><input id="email" type="email" placeholder="Tu email"><button class="btn btn-primary">Suscribirme</button></form>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">SB</div>
+        <div>
+          <h1>SKIINBOX</h1>
+          <p class="tag">Elegancia esencial</p>
+        </div>
       </div>
-    </aside>
-  </section>
-
-  <section id="how" class="section">
-    <h3>Cómo funciona</h3>
-    <div class="grid-3">
-      <div class="card"><strong>1. Perfil</strong><p class="muted">Completa tu test: tallas, colores y ocasiones.</p></div>
-      <div class="card"><strong>2. Selección</strong><p class="muted">Recibirás sugerencias visuales y colecciones curadas por estilistas.</p></div>
-      <div class="card"><strong>3. Compra o guarda</strong><p class="muted">Compra con un click, paga en cuotas o guarda piezas para después.</p></div>
+      <nav class="nav">
+        <a href="#how">Cómo funciona</a>
+        <a href="#plans">Planes</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="plans" class="section">
-    <h3>Planes</h3>
-    <div class="plans">
-      <div class="plan" data-id="basic"><h4>Básico</h4><div class="price">$5 <small>/ mes</small></div><p class="muted">Acceso a piezas seleccionadas y newsletter exclusivo.</p></div>
-      <div class="plan featured" data-id="standard"><h4>Estándar</h4><div class="price">$20 <small>/ mes</small></div><p class="muted">Asesoría personalizada y entregas mensuales.</p></div>
-      <div class="plan" data-id="premium"><h4>Premium</h4><div class="price">$25 <small>/ mes</small></div><p class="muted">Acceso completo a colecciones y beneficios VIP.</p></div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Moda personalizada que llega a tu puerta</h2>
+        <p class="lead">SKIINBOX combina la sensibilidad artesanal con tecnología y estilismo humano para ofrecer prendas atemporales y seleccionadas según tu esencia.</p>
+        <div class="cta">
+          <button class="btn btn-primary" id="startQuiz">Hacer test de estilo</button>
+          <a class="btn" href="#plans">Ver planes</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <img src="assets/images/hero.jpg" alt="Hero SKIINBOX">
+        <div class="card-body">
+          <strong id="recommended">Plan recomendado: Estándar</strong>
+          <div class="muted">USD 20 / mes</div>
+          <form id="subscribeForm" class="subscribe-form">
+            <input id="email" type="email" placeholder="Tu email" required>
+            <button class="btn btn-primary">Suscribirme</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section id="how" class="section">
+      <h3>Cómo funciona</h3>
+      <div class="grid-3">
+        <div class="card"><strong>1. Perfil</strong><p class="muted">Completa tu test: tallas, colores y ocasiones.</p></div>
+        <div class="card"><strong>2. Selección</strong><p class="muted">Recibirás sugerencias visuales y colecciones curadas por estilistas.</p></div>
+        <div class="card"><strong>3. Compra o guarda</strong><p class="muted">Compra con un click, paga en cuotas o guarda piezas para después.</p></div>
+      </div>
+    </section>
+
+    <section id="plans" class="section">
+      <h3>Planes</h3>
+      <div class="plans">
+        <div class="plan" data-id="basic">
+          <h4>Básico</h4>
+          <div class="price">$5 <small>/ mes</small></div>
+          <p class="muted">Acceso a piezas seleccionadas y newsletter exclusivo.</p>
+        </div>
+        <div class="plan featured" data-id="standard">
+          <h4>Estándar</h4>
+          <div class="price">$20 <small>/ mes</small></div>
+          <p class="muted">Asesoría personalizada y entregas mensuales.</p>
+        </div>
+        <div class="plan" data-id="premium">
+          <h4>Premium</h4>
+          <div class="price">$25 <small>/ mes</small></div>
+          <p class="muted">Acceso completo a colecciones y beneficios VIP.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lookbook" class="section">
+      <h3>Lookbook</h3>
+      <div class="lookbook">
+        <img src="assets/images/look1.jpg" alt="Look 1">
+        <img src="assets/images/look2.jpg" alt="Look 2">
+        <img src="assets/images/look3.jpg" alt="Look 3">
+        <img src="assets/images/look4.jpg" alt="Look 4">
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h3>Nosotros</h3>
+      <p class="muted">SKIINBOX nace de la convicción de que vestir bien debe ser sencillo, honesto y con propósito. Inspirados por la artesanía italiana, unimos tecnología con sensibilidad humana para crear looks que perduran.</p>
+      <div class="mission-grid">
+        <div class="mission">
+          <h4>Misión</h4>
+          <p>Crear una experiencia de moda donde la calidad, la calma y la autenticidad se entrelazan. Ofrecemos prendas que elevan la presencia de quien las lleva.</p>
+        </div>
+        <div class="mission">
+          <h4>Visión</h4>
+          <p>Ser referente regional de la alta costura atemporal, guiados por la filosofía de la belleza consciente y el detalle humano.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contacto</h3>
+      <div class="contact-grid">
+        <form id="contactForm" class="card">
+          <label>Nombre</label>
+          <input name="name" required>
+          <label>Email</label>
+          <input name="email" type="email" required>
+          <label>Mensaje</label>
+          <textarea name="message" rows="4" required></textarea>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+        <aside class="card">
+          <h4>Sede</h4>
+          <p class="muted">Lima, Perú · Atención 9am - 6pm</p>
+          <h4>Soporte</h4>
+          <p class="muted">hola@skiinbox.com</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div><strong>SKIINBOX</strong><div class="muted">Elegancia esencial · Moda por suscripción</div></div>
+      <div class="muted">© 2025 SKIINBOX · Lima, Perú</div>
     </div>
-  </section>
+  </footer>
 
-  <section id="lookbook" class="section">
-    <h3>Lookbook</h3>
-    <div class="lookbook">
-      <img src="assets/images/look1.jpg" alt="Look 1">
-      <img src="assets/images/look2.jpg" alt="Look 2">
-      <img src="assets/images/look3.jpg" alt="Look 3">
-      <img src="assets/images/look4.jpg" alt="Look 4">
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h3>Nosotros</h3>
-    <p class="muted">SKIINBOX nace de la convicción de que vestir bien debe ser sencillo, honesto y con propósito. Inspirados por la artesanía italiana, unimos tecnología con sensibilidad humana para crear looks que perduran.</p>
-    <div class="mission-grid">
-      <div class="mission"><h4>Misión</h4><p>Crear una experiencia de moda donde la calidad, la calma y la autenticidad se entrelazan. Ofrecemos prendas que elevan la presencia de quien las lleva.</p></div>
-      <div class="mission"><h4>Visión</h4><p>Ser referente regional de la alta costura atemporal, guiados por la filosofía de la belleza consciente y el detalle humano.</p></div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h3>Contacto</h3>
-    <div class="contact-grid">
-      <form id="contactForm" class="card"><label>Nombre</label><input name="name" required><label>Email</label><input name="email" type="email" required><label>Mensaje</label><textarea name="message" rows="4" required></textarea><button class="btn btn-primary" type="submit">Enviar</button></form>
-      <aside class="card"><h4>Sede</h4><p class="muted">Lima, Perú · Atención 9am - 6pm</p><h4>Soporte</h4><p class="muted">hola@skiinbox.com</p></aside>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container"><div><strong>SKIINBOX</strong><div class="muted">Elegancia esencial · Moda por suscripción</div></div><div class="muted">© 2025 SKIINBOX · Lima, Perú</div></div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
