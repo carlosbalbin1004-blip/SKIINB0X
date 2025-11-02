@@ -1,9 +1,10 @@
-# SKIINBOX - Sitio listo para GitHub Pages
+# 1. Clonar el repo (si no lo tienes local)
+git clone https://github.com/carlosbalbin1004-blip/skiinbox-.git
+cd skiinbox-
 
-Instrucciones:
-1. Descomprime este paquete.
-2. Subir todos los archivos (index.html, style.css, script.js, assets/) a tu repositorio GitHub en la rama `main` (raíz).
-3. En GitHub: Settings → Pages → Source: main / (root) → Save.
-4. Tu sitio estará disponible en: https://<tu-usuario>.github.io/<repo>/
+# 2. Copiar los archivos (puedes crear con tu editor)
+# Crea index.html, style.css, script.js y la carpeta assets/images con tus fotos
 
-Si quieres que suba los archivos por ti a GitHub, dame tu usuario y crearé el repo público para que lo copies (no necesito tu contraseña).
+git add index.html style.css script.js assets/images/*
+git commit -m "Add Skiinbox site (final)"
+git push origin main
